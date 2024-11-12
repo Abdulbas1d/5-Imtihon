@@ -14,7 +14,104 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="container" class="container">
+        <div class="logo">
+            <img src="./images/logo-picture.svg" alt="">
+        </div>
+
+        <div id="reception" class="reception">
+            <h1>Vakansiya ma'lumotlarini kiriting</h1>
+            <form id="form" class="form">
+                <label>Logotip URL</label>
+                <input type="url" placeholder="Logotip URL Manzilini kiriting" id="img">
+
+                <label>Kompaniya nomi</label>
+                <input type="text" placeholder="Kompaniya nomini kiriting" id="companyName">
+
+                <div id="checbox" class="checbox">
+                    <label for="new">
+                        <input type="checkbox" id="new" value="new">
+                        Yangi
+                    </label>
+                    <label for="featured">
+                        <input type="checkbox" id="featured" value="Featured">
+                        Featured
+                    </label>
+                </div>
+
+                <label>Lavozim</label>
+                <input type="text" placeholder="Fullstack Developer" id="level">
+
+                <div class="datas">
+                    <div id="data1" class="data1">
+                        <label for="time">Vaqt</label>
+                        <select id="time">
+                            <option value="Tanlang">Tanlang</option>
+                            <option value="1 Day Ago">1 Day Ago</option>
+                            <option value="2 Day Ago">2 Day Ago</option>
+                            <option value="3 Day Ago">3 Day Ago</option>
+                            <option value="4 Day Ago">4 Day Ago</option>
+                            <option value="5 Day Ago">5 Day Ago</option>
+                            <option value="6 Day Ago">6 Day Ago</option>
+                            <option value="1 Week Ago">1 Week Ago</option>
+                            <option value="2 Week Ago">2 Week Ago</option>
+                            <option value="3 Week Ago">3 Week Ago</option>
+                            <option value="4 Week Ago">4 Week Ago</option>
+                            <option value="1 Month Ago">1 Month Ago</option>
+                            <option value="2 Month Ago">4 Week Ago</option>
+                            <option value="3 Month Ago">3 Month Ago</option>
+                        </select>
+                    </div>
+
+                    <div id="data2" class="data2">
+                        <label for="work">Ish Turi</label>
+                        <select name="" id="work">
+                            <option value="Tanlang">Tanlang</option>
+                            <option value="Part Time">Part Time</option>
+                            <option value="Full Time">Full Time</option>
+                            <option value="Contract">Contract</option>
+                        </select>
+                    </div>
+
+                    <div id="data3" class="data3">
+                        <label for="addres">Joylashuv</label>
+                        <select name="" id="addres">
+                            <option value="Tanlang">Tanlang</option>
+                            <option value="Remote">Remote</option>
+                            <option value="UK Only">UK Only</option>
+                            <option value="Worldwide">Worldwide</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="label">
+                    <label for="">Ko'nikmalar</label>
+                    <div class="first-label">
+                        <label for="fullstack">
+                            <input type="checkbox" id="fullstack">
+                            Fullstack
+                        </label>
+                        <label for="phyton">
+                            <input type="checkbox" id="phyton">
+                            Phyton
+                        </label>
+                    </div>
+                    <div class="second-label">
+                        <label for="midweight">
+                            <input type="checkbox" id="midweight">
+                            Midweight
+                        </label>
+                        <label for="react">
+                            <input type="checkbox" id="react">
+                            React
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+            <button id="buttton">Saqlash</button>
+        </div>
+    </div>
 
 
     <script src="./js/index.js"></script>
