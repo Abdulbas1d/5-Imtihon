@@ -1,4 +1,6 @@
 const container = document.querySelector("#container");
+const loaderContainer = document.querySelector("#loaderContainer");
+const loader = document.querySelector("#loader");
 const reception = document.querySelector("#reception");
 const form = document.querySelector("#form");
 const img = document.querySelector("#img");
@@ -18,6 +20,12 @@ const react = document.querySelector("#react");
 const button = document.querySelector("#button");
 const cards = document.querySelector("#cards");
 
+loader.setAttribute('alt', 'loading');
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(() => {
+        loaderContainer.remove()
+    }, 2000)
+});
 
 function createCard(data) {
     return `
@@ -73,6 +81,11 @@ function validate() {
         return false
     }
 
+    if (checbox.value) {
+        alert("Chexboxlarni tanlashingiz kerak!");
+        return false
+    }
+
 
     return true
 }
@@ -104,6 +117,7 @@ button && button.addEventListener('click', function(event) {
         react: react.checked
     }
 
+    form.reset()
     let card = createCard(job);
     cards.innerHTML += card;
 })
