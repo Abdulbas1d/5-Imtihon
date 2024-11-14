@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function createCard(data) {
     return `
-        <div class="card">
+        <div class="card"></div>
             <img src="${data.img}" alt="">
             <div class="left-card">
                 <div class="companys">
@@ -55,6 +55,8 @@ function createCard(data) {
                 <h4>${data.javaScript}</h4>
                 <h4>${data.sass}</h4>
             </div>
+
+            <span class="delete">Delete</span>
         </div>
     `
 }
@@ -90,6 +92,14 @@ function validate() {
     return true
 }
 
+function getDataFromLocalStorage() {
+    let data = [];
+    if (localStorage.getItem('jobs')) {
+        data = JSON.parse(localStorage.getItem('jobs'));
+    }
+    return data;
+}
+
 
 
 button && button.addEventListener('click', function(event) {
@@ -120,4 +130,35 @@ button && button.addEventListener('click', function(event) {
     form.reset()
     let card = createCard(job);
     cards.innerHTML += card;
+
+    let jobs = getDataFromLocalStorage();
+    jobs.push(job);
+    localStorage.setItem('jobs', JSON.stringify(jobs));
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+    let jobs = getDataFromLocalStorage();
+    
+    jobs.forEach(job => {
+        let card = createToDo(job);
+        cards.innerHTML += card;
+    })
+    
+    const deleteEl = document.querySelectorAll(".delete");
+    deleteEl.length > 0 && deleteEl.forEach(del => {
+        del && del.addEventListener('click', function(event) {
+            let isDelete = confirm("Rostdan ham o'chirmoqchimisiz?")
+            if (isDelete) {
+                this.parentNode.remove();
+                let id = this.getAttribute('data-id');
+                if (id) {
+                    jobs = jobs.filter(job => {
+                        return job.id != id;
+                    })
+
+                    localStorage.setItem('jobs', JSON.stringify(jobs));
+                }
+            }
+        })
+    })
 })
