@@ -1,7 +1,13 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -11,4 +17,293 @@
 
 .logo img{
     width: 100%;
+}
+
+.reception {
+    width: 800px;
+    margin: 0 auto;
+    margin-left: 370px;
+    margin-top: 50px;
+    border: 2px solid grey;
+    padding: 25px;
+    border-radius: 9px;
+
+    margin-bottom: 25px;
+
+    h1 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 900;
+        margin-bottom: 45px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        .picture {
+            margin-left: 22px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        #img {
+            width: 720px;
+            height: 45px;
+            margin-left: 15px;
+            padding-left: 15px;
+            border-radius: 8px;
+            border: none;
+            border: 1px solid grey;
+            margin-bottom: 25px;
+        }
+
+        .companyName {
+            margin-left: 22px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        #companyName {
+            width: 720px;
+            height: 45px;
+            margin-left: 15px;
+            padding-left: 15px;
+            border-radius: 8px;
+            border: none;
+            border: 1px solid grey;
+            margin-bottom: 25px;
+        }
+
+        .checbox {
+            margin-left: 22px;
+            display: flex;
+            gap: 50px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+
+            .new {
+                display: flex;
+                gap: 10px;
+            }
+
+            #new {
+                width: 21px;
+                height: 21px;
+            }
+
+            span {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .old {
+                display: flex;
+                gap: 12px;
+            }
+
+            #featured {
+                width: 21px;
+                height: 21px;
+            }
+        }
+
+        .level {
+            margin-left: 22px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        #level {
+            width: 720px;
+            height: 45px;
+            margin-left: 15px;
+            padding-left: 15px;
+            border-radius: 8px;
+            border: none;
+            border: 1px solid grey;
+            margin-bottom: 25px;
+        }
+
+        .datas {
+            display: flex;
+            gap: 55px;
+            margin-left: 25px;
+            margin-bottom: 30px;
+
+            .data1 {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                .time {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                #time {
+                    width: 170px;
+                    height: 35px;
+                    border: none;
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    padding-left: 8px;
+                }
+            }
+
+            .data2 {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                .work {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                #work {
+                    width: 170px;
+                    height: 35px;
+                    border: none;
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    padding-left: 8px;
+                }
+            }
+
+            .data3 {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                .addres {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                #addres {
+                    width: 170px;
+                    height: 35px;
+                    border: none;
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    padding-left: 8px;
+                }
+            }
+        }
+
+        .label {
+            .menu {
+                margin-left: 22px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .labels {
+                display: flex;
+                margin-top: 15px;
+                margin-left: 22px;
+                gap: 100px;
+
+                .first-label {
+                    display: flex;
+                    flex-direction: column;
+
+                    .fullstack {
+                        display: flex;
+                        gap: 10px;
+                        margin-bottom: 10px;
+
+                        #fullstack {
+                            width: 21px;
+                            height: 21px;
+                        }
+
+                        span {
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .phyton {
+                        display: flex;
+                        gap: 10px;
+
+                        #phyton {
+                            width: 21px;
+                            height: 21px;
+                        }
+
+                        span {
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+    
+                .second-label {
+                    display: flex;
+                    flex-direction: column;
+
+                    .midweight {
+                        display: flex;
+                        gap: 10px;
+                        margin-bottom: 10px;
+
+                        #midweight {
+                            width: 21px;
+                            height: 21px;
+                        }
+
+                        span {
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .react {
+                        display: flex;
+                        gap: 10px;
+
+                        #react {
+                            width: 21px;
+                            height: 21px;
+                        }
+
+                        span {
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #button {
+        width: 690px;
+        height: 45px;
+        margin-left: 28px;
+        border-radius: 8px;
+        border: none;
+        border: 1px solid grey;
+        margin-bottom: 5px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+    }
+
+    #button:hover {
+        background-color: #fff;
+        color: black;
+        font-size: 25px;
+        border: 2px solid black;
+    }
 }

@@ -22,29 +22,29 @@
         <div id="reception" class="reception">
             <h1>Vakansiya ma'lumotlarini kiriting</h1>
             <form id="form" class="form">
-                <label>Logotip URL</label>
+                <label class="picture">Logotip URL</label>
                 <input type="url" placeholder="Logotip URL Manzilini kiriting" id="img">
 
-                <label>Kompaniya nomi</label>
+                <label class="companyName">Kompaniya nomi</label>
                 <input type="text" placeholder="Kompaniya nomini kiriting" id="companyName">
 
                 <div id="checbox" class="checbox">
-                    <label for="new">
+                    <label class="new" for="new">
                         <input type="checkbox" id="new" value="new">
-                        Yangi
+                        <span>Yangi</span>
                     </label>
-                    <label for="featured">
+                    <label class="old" for="featured">
                         <input type="checkbox" id="featured" value="Featured">
-                        Featured
+                        <span>Featured</span>
                     </label>
                 </div>
 
-                <label>Lavozim</label>
+                <label class="level">Lavozim</label>
                 <input type="text" placeholder="Fullstack Developer" id="level">
 
                 <div class="datas">
                     <div id="data1" class="data1">
-                        <label for="time">Vaqt</label>
+                        <label class="time" for="time">Vaqt</label>
                         <select id="time">
                             <option value="Tanlang">Tanlang</option>
                             <option value="1 Day Ago">1 Day Ago</option>
@@ -64,8 +64,8 @@
                     </div>
 
                     <div id="data2" class="data2">
-                        <label for="work">Ish Turi</label>
-                        <select name="" id="work">
+                        <label class="work" for="work">Ish Turi</label>
+                        <select id="work">
                             <option value="Tanlang">Tanlang</option>
                             <option value="Part Time">Part Time</option>
                             <option value="Full Time">Full Time</option>
@@ -74,8 +74,8 @@
                     </div>
 
                     <div id="data3" class="data3">
-                        <label for="addres">Joylashuv</label>
-                        <select name="" id="addres">
+                        <label class="addres" for="addres">Joylashuv</label>
+                        <select id="addres">
                             <option value="Tanlang">Tanlang</option>
                             <option value="Remote">Remote</option>
                             <option value="UK Only">UK Only</option>
@@ -85,31 +85,33 @@
                 </div>
 
                 <div class="label">
-                    <label for="">Ko'nikmalar</label>
-                    <div class="first-label">
-                        <label for="fullstack">
-                            <input type="checkbox" id="fullstack">
-                            Fullstack
-                        </label>
-                        <label for="phyton">
-                            <input type="checkbox" id="phyton">
-                            Phyton
-                        </label>
-                    </div>
-                    <div class="second-label">
-                        <label for="midweight">
-                            <input type="checkbox" id="midweight">
-                            Midweight
-                        </label>
-                        <label for="react">
-                            <input type="checkbox" id="react">
-                            React
-                        </label>
+                    <label class="menu" for="">Ko'nikmalar</label>
+                    <div class="labels">
+                        <div class="first-label">
+                            <label class="fullstack" for="fullstack">
+                                <input type="checkbox" id="fullstack">
+                                <span>Fullstack</span>
+                            </label>
+                            <label class="phyton" for="phyton">
+                                <input type="checkbox" id="phyton">
+                                <span>Phyton</span>
+                            </label>
+                        </div>
+                        <div class="second-label">
+                            <label class="midweight" for="midweight">
+                                <input type="checkbox" id="midweight">
+                                <span>Midweight</span>
+                            </label>
+                            <label class="react" for="react">
+                                <input type="checkbox" id="react">
+                                <span>React</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </form>
 
-            <button id="buttton">Saqlash</button>
+            <button id="button">Saqlash</button>
         </div>
     </div>
 
