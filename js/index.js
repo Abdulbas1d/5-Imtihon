@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let jobs = getDataFromLocalStorage();
     
     jobs.forEach(job => {
-        let card = createToDo(job);
+        let card = createCard(job);
         cards.innerHTML += card;
     })
     
