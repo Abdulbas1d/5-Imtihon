@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function createCard(data) {
     return `
-        <div class="card"></div>
+        <div class="card">
             <img src="${data.img}" alt="">
             <div class="left-card">
                 <div class="companys">
