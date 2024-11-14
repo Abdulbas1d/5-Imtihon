@@ -445,15 +445,18 @@ body {
             }
         }
 
-        #delete {
+        .delete {
             font-size: 20px;
             font-weight: 600;
             color: blue;
-            margin-top: 55px;
+            margin-top: 105px;
             cursor: pointer;
+            position: relative;
+            right: 50px;
+            padding-right: 60px;
         }
 
-        #delete:hover {
+        .delete:hover {
             color: red;
         }
     }
